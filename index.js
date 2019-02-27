@@ -1,4 +1,5 @@
 import * as monaco from "monaco-editor/esm/vs/editor/editor.api.js";
+import "./features";
 
 self.MonacoEnvironment = {
   getWorker: (moduleId, label) =>
@@ -21,8 +22,6 @@ const editor = monaco.editor.create(document.getElementById("container"), {
 
 editor.getModel().updateOptions({ tabSize: 2 });
 editor.focus();
-
-import("./features.js").then(() => console.log("loaded"));
 
 window.addEventListener("resize", () => {
   editor.layout();
