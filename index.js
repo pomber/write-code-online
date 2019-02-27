@@ -1,4 +1,4 @@
-import { monaco } from "monaco-editor";
+import { editor as monaco } from "monaco-editor";
 
 const editor = monaco.create(document.getElementById("container"), {
   value: "",
