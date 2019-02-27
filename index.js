@@ -20,3 +20,14 @@ editor.focus();
 window.addEventListener("resize", () => {
   editor.layout();
 });
+
+window.document.addEventListener(
+  "keydown",
+  e => {
+    if ((e.metaKey || e.ctrlKey) && e.keyCode == 83) {
+      e.preventDefault();
+      // do nothing
+    }
+  },
+  false
+);
