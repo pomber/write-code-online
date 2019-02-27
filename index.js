@@ -1,6 +1,11 @@
-import { editor as monaco } from "monaco-editor";
+import * as monaco from "monaco-editor";
 
-const editor = monaco.create(document.getElementById("container"), {
+self.MonacoEnvironment = {
+  getWorker: (moduleId, label) =>
+    new Worker("./node_modules/monaco-editor/esm/vs/editor/editor.worker.js")
+};
+
+const editor = monaco.editor.create(document.getElementById("container"), {
   value: "",
   lineNumbers: "off",
   scrollBeyondLastLine: false,
