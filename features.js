@@ -1,0 +1,9 @@
+import "monaco-editor/esm/vs/editor/editor.all.js";
+import "monaco-editor/esm/vs/editor/standalone/browser/accessibilityHelp/accessibilityHelp.js";
+import "monaco-editor/esm/vs/editor/standalone/browser/iPadShowKeyboard/iPadShowKeyboard.js";
+import "monaco-editor/esm/vs/editor/standalone/browser/inspectTokens/inspectTokens.js";
+import "monaco-editor/esm/vs/editor/standalone/browser/quickOpen/gotoLine.js";
+import "monaco-editor/esm/vs/editor/standalone/browser/quickOpen/quickCommand.js";
+import "monaco-editor/esm/vs/editor/standalone/browser/quickOpen/quickOutline.js";
+import "monaco-editor/esm/vs/editor/standalone/browser/referenceSearch/standaloneReferenceSearch.js";
+import "monaco-editor/esm/vs/editor/standalone/browser/toggleHighContrast/toggleHighContrast.js";
