@@ -65,13 +65,13 @@ document.getElementById("fullscreen-button").addEventListener("click", () => {
   }
 
   if (isFullScreen) {
-    document.getElementById("enter-fullscreen").style.display = "";
-    document.getElementById("exit-fullscreen").style.display = "none";
+    document.querySelector(".enter-fullscreen").style.display = "";
+    document.querySelector(".exit-fullscreen").style.display = "none";
     document.getElementById("fullscreen-button").style.opacity = 0.2;
     document.getElementById("github-link").style.opacity = 0.1;
   } else {
-    document.getElementById("enter-fullscreen").style.display = "none";
-    document.getElementById("exit-fullscreen").style.display = "";
+    document.querySelector(".enter-fullscreen").style.display = "none";
+    document.querySelector(".exit-fullscreen").style.display = "";
     document.getElementById("fullscreen-button").style.opacity = 0.1;
     document.getElementById("github-link").style.opacity = 0;
   }
