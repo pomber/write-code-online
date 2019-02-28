@@ -6,8 +6,9 @@ self.MonacoEnvironment = {
     new Worker("./node_modules/monaco-editor/esm/vs/editor/editor.worker.js")
 };
 
+const initialText = "write here..";
 const editor = monaco.editor.create(document.getElementById("container"), {
-  value: "",
+  value: initialText,
   lineNumbers: "off",
   scrollBeyondLastLine: false,
   theme: "vs-dark",
@@ -21,6 +22,7 @@ const editor = monaco.editor.create(document.getElementById("container"), {
 });
 
 editor.getModel().updateOptions({ tabSize: 2 });
+editor.setPosition({ column: initialText.length + 1, lineNumber: 1 });
 editor.focus();
 
 window.addEventListener("resize", () => {
