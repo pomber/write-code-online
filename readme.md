@@ -1,5 +1,5 @@
 # Write Code Online
-A minimalist online code editor.
+A minimalist code editor.
 
 > If you like this project consider [backing my open source work on Patreon!](https://patreon.com/pomber)  
 > And follow [@pomber](https://twitter.com/pomber) on twitter for updates.
