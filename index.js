@@ -21,6 +21,17 @@ const editor = monaco.editor.create(document.getElementById("container"), {
   renderLineHighlight: "none"
 });
 
+var viewZoneId = null;
+editor.changeViewZones(function(changeAccessor) {
+  var domNode = document.createElement("div");
+  domNode.style.background = "lightgreen";
+  viewZoneId = changeAccessor.addZone({
+    afterLineNumber: 0,
+    heightInLines: 3,
+    domNode: domNode
+  });
+});
+
 editor.getModel().updateOptions({ tabSize: 2 });
 editor.setPosition({ column: initialText.length + 1, lineNumber: 1 });
 editor.focus();
