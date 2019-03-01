@@ -14,7 +14,7 @@ const editor = monaco.editor.create(document.getElementById("container"), {
   theme: "vs-dark",
   minimap: { enabled: false },
   cursorStyle: "block",
-  cursorBlinking: "smooth",
+  cursorBlinking: "solid",
   hideCursorInOverviewRuler: true,
   matchBrackets: false,
   overviewRulerBorder: false,
