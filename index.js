@@ -18,7 +18,8 @@ const editor = monaco.editor.create(document.getElementById("container"), {
   hideCursorInOverviewRuler: true,
   matchBrackets: false,
   overviewRulerBorder: false,
-  renderLineHighlight: "none"
+  renderLineHighlight: "none",
+  wordWrap: "on"
 });
 
 editor.getModel().updateOptions({ tabSize: 2 });
